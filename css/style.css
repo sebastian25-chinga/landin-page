@@ -3,6 +3,7 @@
     --blue: hsl(233, 100%, 69%);
     --dark: hsl(210, 10%, 33%);
     --greysinBlue: hsl(200, 11%, 95%);
+    --graysih: hsl(201, 11%, 66%);
 }
 
 html{
@@ -25,10 +26,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .contenedor-principal__titulo {
     margin-bottom: 1.8rem;
+    color: var(--dark);
 }
 
 @media (min-width: 200px) {
@@ -60,6 +63,7 @@ h1, h2, h3, h4, h5 {
 
 p {
     margin: 0;
+    color: var(--graysih);
 }
 
 /* Header */
@@ -94,6 +98,13 @@ p {
     border-radius: 5rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+	.botones {
+        width: 95%;
+        text-align: center;
+    }
 }
 
 @media (min-width: 768px) {
@@ -155,11 +166,13 @@ p {
 @media (min-width: 1024px) {
     .elemento {
         width: 60%;
+        text-align: left;
     }
 }
 
 .elemento__titulo {
     margin-bottom: .8rem;
+    color: var(--dark);
 }
 
 /* Contenido Principal 2 */
@@ -187,6 +200,8 @@ p {
 
 .servicio__titulo {
     margin-bottom: 2rem;
+    color: var(--dark);
+    font-weight: 600;
 }
 
 .servicio__parrafo {
@@ -250,10 +265,13 @@ p {
 .footer-lista {
     text-align: center;
     margin-bottom: 2rem;
+    
 }
 
 .footer-lista p {
     margin-bottom: 2rem;
+    color: var(--dark);
+    font-weight: 600;
 }
 
 @media (min-width: 1024px) {
